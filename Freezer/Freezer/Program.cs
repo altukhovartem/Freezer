@@ -1,4 +1,5 @@
 ﻿using Freezer.Data;
+using Freezer.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +12,7 @@ namespace Freezer
     {
         static void Main(string[] args)
         {
-            Context context = new Context();
-            Product p1 = new Product
-            {
-                Name = "Test",
-                ManufactureDate = new DateTime(2007, 2, 2)
-            };
-            context.ProductSet.Add(p1);
-            context.SaveChanges(); 
+            CUI.Run();
         }
     }
 }
