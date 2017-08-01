@@ -19,6 +19,10 @@ namespace Freezer.Actions
             DateTime? currentDateOfManufacture = DateTime.Parse(Console.ReadLine());
             Console.Write("Expiration Date: ");
             DateTime? currentExpirationDate = DateTime.Parse(Console.ReadLine());
+            Console.Write("Type of Product: ");
+            ProductTypeEnum currentProductType = (ProductTypeEnum)Enum.Parse(typeof(ProductTypeEnum), Console.ReadLine(), true);
+
+
 
             Product currentProduct = new Product
             {
@@ -37,9 +41,12 @@ namespace Freezer.Actions
             Console.Clear();
             Console.WriteLine("List of Products");
             Context context = new Context();
+            int i = 1;
             foreach (Product product in context.ProductSet)
             {
                 Console.WriteLine("------------");
+                Console.WriteLine("Title: {0}", product.Name);
+                Console.WriteLine("ProductType: {0}, Expiration Date: {1}", product.ProductType, product.ExpirationDate);
             }
         }
     }

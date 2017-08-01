@@ -16,8 +16,18 @@ namespace Freezer.Data
 
         public DateTime? ManufactureDate { get; set; }
         public DateTime? ExpirationDate { get; set; }
-        //public string Location { get; set; }
-        public string Type { get; set; }
+
         //public string Description { get; set; }
+        //public string Location { get; set; }
+
+        public ProductTypeEnum ProductType { get; set; }
+    }
+
+    enum ProductTypeEnum
+    {
+        Meat,
+        Fish,
+        Vegetables,
+        Fruit,
     }
 }

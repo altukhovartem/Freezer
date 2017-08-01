@@ -55,7 +55,6 @@
     <Compile Include="Actions\FreezerAction.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Data\Product.cs" />
-    <Compile Include="Data\ProductType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\CUI.cs" />

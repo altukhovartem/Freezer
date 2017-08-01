@@ -22,7 +22,8 @@ namespace Freezer.UI
                 string option = Console.ReadLine();
                 switch (option)
                 {
-                    case "1": FreezerAction.AddNewProduct() ; break;  
+                    case "1": FreezerAction.AddNewProduct(); break;
+                    case "2": FreezerAction.ShowProducts(); break;
                 }
             }
         }

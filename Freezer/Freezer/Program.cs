@@ -12,6 +12,12 @@ namespace Freezer
     {
         static void Main(string[] args)
         {
+            //Console.WriteLine();
+            //ProductType q = new ProductType
+            //{
+            //    Name = (ProductTypeEnum)Enum.Parse(typeof(ProductTypeEnum), Console.ReadLine(), true)
+            //};
+
             CUI.Run();
         }
     }
